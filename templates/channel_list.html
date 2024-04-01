@@ -1,0 +1,9 @@
+
+<h1>Channels</h1>
+<ul>
+{% for channel in channels %}
+<li><a href="/channel/{{ channel.channel_id }}">{{ channel.name }}</a></li>
+{% endfor %}
+</ul>
+
+
