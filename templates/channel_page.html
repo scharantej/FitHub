@@ -1,0 +1,11 @@
+
+<h1>{{ channel.name }}</h1>
+<p>{{ channel.description }}</p>
+<p>Subscribers: {{ channel.subscribers }}</p>
+<ul>
+{% for video in videos %}
+<li><a href="/video/{{ video.video_id }}">{{ video.title }}</a></li>
+{% endfor %}
+</ul>
+
+
